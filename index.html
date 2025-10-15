@@ -14,10 +14,9 @@
 <body>
   <header>
     <div class="container">
-      <img id="photo" src="res/user-profile-placeholder.png" alt="Foto de Samuel Meza" class="perfil" />
       <div>
         <h1>Samuel Meza</h1>
-        <p>yo</p>
+        <img id="photo" src="res/user-profile-placeholder.png" alt="Foto de Samuel Meza" class="perfil" />
         <nav>
           <ul>
             <li><a href="#resumen">Resumen</a></li>
@@ -35,16 +34,24 @@
     <section id="resumen">
       <h2 class="subtitle">Resumen</h2>
       <p>
-        Breve descripción de habilidades y experiencia.
+        Soy un estudiante de Iingenieria en computación en la ESPOL, con experiencia en dessarrollo movil. Me apasiona la tecnología y siempre estoy buscando aprender nuevas habilidades y mejorar mis conocimientos en el campo de la programación.
       </p>
     </section>
 
     <section id="experiencia">
       <h2 class="subtitle">Experiencia</h2>
       <article>
-        
+        <h3>Desarrollador Móvil - Freelancer</h3>
+        <ul>
+          <li>Desarrollé y mantuve aplicaciones móviles utilizando Flutter y Dart.</li>
+          <li>Colaboré con el equipo de diseño para crear interfaces de usuario atractivas y funcionales.</li>
+        </ul>
       </article>
-
+        <h3>Desarrollo Videojuego - Practicante</h3>
+        <ul>
+          <li>Me interesa</li>
+          <li>Implementé mecánicas de juego y optimicé el rendimiento del juego.</li>
+        </ul>
       <article>
 
       </article>
@@ -53,20 +60,100 @@
     <section id="educacion">
       <h2 class="subtitle">Educación</h2>
       <article>
-        <h3>Ingeniería en ciencia de la computación</h3>
+        <h3>Estudiando la Ingeniería en ciencia de la computación</h3>
         <p>Escuela Superior Politécnica del Litoral</p>
       </article>
     </section>
 
     <section id="habilidades">
       <h2 class="subtitle">Habilidades</h2>
-      
+      <table>
+      <tr>
+        <th>Lenguajes Programacion/th>
+        <th>Nivel</th>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>Avanzado</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>Intermedio</td>
+      </tr>
+      <tr>
+        <td>C#</td>
+        <td>Intermedio</td>
+      </tr>
+      <tr>
+        <td>Dart</td>
+        <td>Intermedio</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Avanzado</td>
+      </tr>
+    </table>
+
+    <h2>Idiomas</h2>
+    <table>
+      <tr>
+        <th>Idioma</th>
+        <th>Nivel</th>
+      </tr>
+      <tr>
+        <td>Italiano</td>
+        <td>Nativo</td>
+      </tr>
+      <tr>
+        <td>Español</td>
+        <td>Avanzado</td>
+      </tr>
+      <tr>
+        <td>Inglés</td>
+        <td>Avanzado</td>
+      </tr>
+      <tr>
+        <td>Japonés</td>
+        <td>En aprendizaje</td>
+      </tr>
+    </table>
     </section>
 
     <section id="proyectos">
-      <h2 class="subtitle">Proyectos</h2>
+      <h2 class="subtitle">Proyectos Estudiantiles</h2>
+      <div class="proyecto">
+        <h3>Aplicación de resumen resultados olimpicos</h3>
+        <p>Materia: Programacion Orientada a Objetos</p>
+        <p>
+          Aplicacion movil desarrollada en Android Studio con Java siguiendo las buenas practicas de POO. La aplicacion permite ver los resultados de las olimpiadas en diferentes deportes y categorias.
+        </p>
+        <a href="https://github.com/Leaxmus/POO5_1P" target="_blank">Ver Repositorio en GitHub</a>
+      </div>
+
+      <div class="proyecto">
+        <h3>Aplicación movil  - Red de aeropuerto</h3>
+        <p>Materia: Estructura de Datos</p>
+        <p>
+          Aplicacion movil desarrollada en Andorid Studio con Java. La aplicacion permite gestionar una red de aeropuertos, permitiendo agregar, eliminar y buscar aeropuertos y vuelos.
+          La aplicacion utiliza estructuras de datos como listas enlazadas, pilas y colas para gestionar la informacion. Ademas, implementa algoritmos de busqueda y ordenamiento para mejorar la eficiencia de la aplicacion. 
+        </p>
+        <a href="https://github.com/Leaxmus/ED_P1_Grupo09" target="_blank">Ver Repositorio en GitHub</a>
+      </div>
     </section>
   </main>
+
+  <section id="ubicacion">
+    <h2>Donde vivo</h2>
+
+  <iframe
+    width="600"
+    height="450"
+    frameborder="0"
+    style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=TU_API_KEY&q=Guayaquil,Ecuador"
+    allowfullscreen>
+  </iframe>
+  </section>
 
   <section id="video-presentacion">
     <h2 class="subtitle">Video de Presentación</h2>
@@ -82,7 +169,7 @@
       </iframe>
     </div>
   </section>
-
+  <h2 class="subtitle">Contactame</h2>
   <form id="form-contacto" action="" method="POST">
     <label for="nombre">Nombre:</label><br/>
     <input type="text" id="nombre" name="nombre" required /><br/>
